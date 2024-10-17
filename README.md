@@ -8,7 +8,7 @@ When Svelte creates a custom element, if no child elements are initially passed 
 
 [MyElement.svelte](./src/MyElement.svelte)
 [index.html](./index.html)
-[main.ts](./src/main.ts)
+[app/main.ts](./app/main.ts)
 
 ## Reproduction steps
 
