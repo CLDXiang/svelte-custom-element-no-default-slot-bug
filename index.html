@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svelte Custom Element $host() Bug</title>
+    <style>
+      my-element {
+        display: block;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+      }
+
+      #start-with-empty-slot {
+        background-color: #f00;
+      }
+
+      #start-with-not-empty-slot {
+        background-color: #0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <my-element id="start-with-empty-slot"></my-element>
+      <my-element id="start-with-not-empty-slot"><span>1</span></my-element>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/app/main.ts"></script>
+  </body>
+</html>
